@@ -1,0 +1,243 @@
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: rgb(233, 226, 216);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Estilo do cabeçário */
+
+header {
+    padding: 40px 4%;
+    color: rgb(111, 21, 141);
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: rgb(171, 101, 223);
+    transform: scale(1.09);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .contato button {
+    color: rgb(1, 2, 3);
+    padding: 10px 40px;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(146, 75, 190);
+    border: 0;
+    border-radius: 30px;
+}
+
+h1.titulo{
+    color:rgb(139, 55, 167);
+    font-size: 28px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 20px;
+}
+
+header .interface,
+header .menu ul,
+header .nome ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header .menu li,
+header .nome li {
+    margin-right: 20px;
+}
+
+header .nome {
+    font-family: 'Merriweather', serif;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+/* Estilo do topo */
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site .img-topo-site {
+    flex-shrink: 0;
+    margin-top: -20px; 
+}
+
+.topo-do-site img {
+    width: 100%; 
+    max-width: 380px; 
+    height: auto;
+    display: block;
+}
+
+
+.topo-do-site h1{
+    color:rgb(139, 55, 167);
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.topo-do-site p{
+    color: #000000;
+    margin: 45px 0;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+section.sobre-mim {
+    padding: 40px 4%;
+}
+
+section.sobre-mim .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px; /* Ajuste conforme necessário para controlar o espaçamento entre h1 e p */
+}
+
+.sobre-mim h1{
+    color:rgb(139, 55, 167);
+    font-size: 28px;
+    line-height: 40px;
+    max-width: 1000px;
+    
+
+}
+
+.sobre-mim p{
+    color: #000000;
+    line-height: 1.8;
+    font-size: 18px;
+    width: 800px;
+    
+}
+
+/*estilo das skills*/
+
+section.skills h1{
+    padding: 40px 4%;
+    margin-left: 14px;
+    
+}
+
+.skills .skills-box i{
+    color: #000000;
+    padding: 175px;
+    font-size: 100px;
+
+}
+
+/*estilo projetos*/
+
+section.projetos{
+    padding: 80px;
+}
+
+section.interface h1{
+    padding: 40px 4%;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 20% 80%;
+    transition: 3s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100%;
+}
+
+section.projetos .flex{
+    justify-content: center;
+}
+
+.overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 3, 3, 0.574);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(211, 170, 235);
+}
+
+/*estilo contato*/
+
+section.contato h1{
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+section.contato h2{
+    margin-left: 50px;
+}
