@@ -6,8 +6,9 @@ export const HeaderContainer = styled.div`
     width: 100%;
     align-items: center;
     background-color: black;
-    position: fixed;    
-    margin-top: 50px;    
+    position: fixed;      
+    z-index: 100;
+    top: 0;
 `
 
 export const Nav = styled.ul`
