@@ -8,12 +8,15 @@ export const MainContainer = styled.div`
 
 export const ApresentationSection = styled.section`
     width: 100%;
-    margin-top: 100px;
+    margin-top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-inline: 100px;
     align-items: center;
+    background-color: #EFEFEF;
+    padding-top: 150px;
+    padding-bottom: 100px;
 
     .name {
         display: flex;
@@ -26,6 +29,7 @@ export const ApresentationSection = styled.section`
             padding: 0;
             margin-block: 10px;
             font-family: var(--font-family);
+            color: #35183B;
         }
 
         .lastName {
@@ -34,20 +38,22 @@ export const ApresentationSection = styled.section`
             margin: 0;
             padding: 0;
             font-family: var(--font-family);
+            color:  #7C5593;
         }
 
         .line {
             width: 100px;
             height: 3px;
-            background-color: black;
             margin-block: 10px;
             border-radius: 10px;
+            background-color: #7C5593;
         }
 
         .icon {
             display: flex;
             flex-direction: row;
             gap: 10px;
+            color: #35183B;
         }
     }
 
@@ -61,6 +67,7 @@ export const ApresentationSection = styled.section`
             margin: 0;
             padding: 0;
             font-family: var(--font-family);
+            color: #35183B;
         }
 
         .software {
@@ -69,6 +76,11 @@ export const ApresentationSection = styled.section`
             margin: 0;
             padding: 0;
             font-family: var(--font-family);
+            color: #35183B;
+
+            span {
+                color: #7C5593;
+            }
         }
 
         .description {
@@ -77,16 +89,55 @@ export const ApresentationSection = styled.section`
             margin: 0;
             padding: 0;
             font-family: var(--font-family);
+            color: #35183B;
         }
 
         .button {
             display: flex;
             flex-direction: row;
             gap: 10px;
+            padding-block: 50px;
+            color: #35183B;
+            
         }
 
 
+
     }
+`
+
+export const SkillsSection = styled.section`  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+
+    .aboutme {
+        display: flex;
+        flex-direction: column;
+        background-color: #7C5593;
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            font-family: var(--font-family);
+            color: #EFEFEF;
+        }
+
+        .description {
+            font-size: 20px;
+            font-weight: 200;
+            padding-top: 0px;
+            font-family: var(--font-family);
+            color: #EFEFEF;
+        }
+
+    }
+
 `
 
 
