@@ -5,7 +5,7 @@ export const HeaderContainer = styled.div`
     flex-direction: column;
     width: 100%;
     align-items: center;
-    background-color: #35183B;
+    background-color: var(--color-primary);
     position: fixed;      
     z-index: 100;
     top: 0;

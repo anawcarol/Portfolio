@@ -4,6 +4,7 @@ export const MainContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #EFEFEF;
 `
 
 export const ApresentationSection = styled.section`
@@ -23,22 +24,36 @@ export const ApresentationSection = styled.section`
         flex-direction: column;
 
         .firstName {
-            font-size: 50px;
+            font-size: 80px;
             font-weight: bold;
             margin: 0;
             padding: 0;
             margin-block: 10px;
+            margin-top: -50px;
             font-family: var(--font-family);
-            color: #35183B;
+            color: var(--color-secondary);
+            z-index: 3;
+        }
+
+        img {
+            width: 400px;
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            margin-top: 150px;
+            margin-left: 70px;
+
+
         }
 
         .lastName {
-            font-size: 40px;
+            font-size: 70px;
             font-weight: bold;
             margin: 0;
             padding: 0;
             font-family: var(--font-family);
-            color:  #7C5593;
+            color:  var(--color-primary);
+            z-index: 1;
         }
 
         .line {
@@ -46,14 +61,14 @@ export const ApresentationSection = styled.section`
             height: 3px;
             margin-block: 10px;
             border-radius: 10px;
-            background-color: #7C5593;
+            background-color: var(--color-secondary);
         }
 
         .icon {
             display: flex;
             flex-direction: row;
             gap: 10px;
-            color: #35183B;
+            color: var(--color-primary);
         }
     }
 
@@ -67,7 +82,7 @@ export const ApresentationSection = styled.section`
             margin: 0;
             padding: 0;
             font-family: var(--font-family);
-            color: #35183B;
+            color: var(--color-primary);
         }
 
         .software {
@@ -76,7 +91,7 @@ export const ApresentationSection = styled.section`
             margin: 0;
             padding: 0;
             font-family: var(--font-family);
-            color: #35183B;
+            color: var(--color-primary);
 
             span {
                 color: #7C5593;
@@ -89,7 +104,7 @@ export const ApresentationSection = styled.section`
             margin: 0;
             padding: 0;
             font-family: var(--font-family);
-            color: #35183B;
+            color: var(--color-primary);
         }
 
         .button {
@@ -97,7 +112,7 @@ export const ApresentationSection = styled.section`
             flex-direction: row;
             gap: 10px;
             padding-block: 50px;
-            color: #35183B;
+            color: var(--color-primary);
             
         }
 
@@ -110,33 +125,59 @@ export const SkillsSection = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: start;
     width: 100%;
+    margin-border: 0;
+    background: #7C5593;
+    padding-inline: 100px;
+    padding-top: 80px;
+    padding-bottom: 250px;
+    z-index: 3;
 
 
-    .aboutme {
-        display: flex;
-        flex-direction: column;
-        background-color: #7C5593;
 
-        .title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-top: 20px;
-            font-family: var(--font-family);
-            color: #EFEFEF;
-        }
-
-        .description {
-            font-size: 20px;
-            font-weight: 200;
-            padding-top: 0px;
-            font-family: var(--font-family);
-            color: #EFEFEF;
-        }
+    .title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+        font-family: var(--font-family);
+        color: #35183B;
 
     }
+
+    .description {
+        font-size: 20px;
+        font-weight: 200;
+        padding-top: 0px;
+        font-family: var(--font-family);
+        color: white;
+    }
+
+
+`
+
+
+export const CardSection = styled.section`
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 100px;
+    justify-content: center;
+    margin-top: -150px;
+    z-index: 3;
+
+`
+
+export const TecSection = styled.section`
+    display : flex;
+    flex-direction: row;
+    margin-block: 40px;
+    margin-inline: 100px;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
 
 `
 

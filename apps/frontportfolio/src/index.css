@@ -2,6 +2,9 @@
 
 :root {
   --font-family: 'Jost', sans-serif;
+  --color-primary: #35183B; /* Example primary color */
+  --color-secondary: #7C5593; /* Example secondary color */
+  --color-tertiary: #e74c3c; /* Example tertiary color */
 }
 
 body{
