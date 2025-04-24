@@ -26,7 +26,11 @@
     "packages/*"
   ],
   "dependencies": {
+    "express": "^5.1.0",
     "husky": "^9.1.7",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.13.2",
+    "nodemon": "^3.1.10",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.3.0",
     "styled-components": "^6.1.15"
