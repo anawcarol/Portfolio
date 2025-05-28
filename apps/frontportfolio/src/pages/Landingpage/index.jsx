@@ -71,4 +71,5 @@ function Landingpage() {
     </MainContainer>
   );
 }
+
 export default Landingpage;
