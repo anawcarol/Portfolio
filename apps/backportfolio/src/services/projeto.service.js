@@ -1,4 +1,4 @@
-import Projeto from "../models/Projeto";
+import Projeto from "../models/Projeto.js";
 
 const CreateService =(body)=> Projeto.create(body); //cria um novo projeto, body porque são muitos atributos
 
